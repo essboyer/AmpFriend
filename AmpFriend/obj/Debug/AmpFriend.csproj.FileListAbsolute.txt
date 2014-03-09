@@ -1,0 +1,8 @@
+C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\bin\Debug\AmpFriend.exe
+C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\bin\Debug\AmpFriend.pdb
+C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\AmpFriend.exe
+C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\AmpFriend.pdb
+C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\AmpFriend.MainForm.resources
+C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\GenerateResource.write.1.tlog
