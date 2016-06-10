@@ -19,9 +19,17 @@ namespace AmpFriend
 		{
 		}
 		
-		public static decimal findPFromRMS(decimal rmsVolts, decimal load)
+		public static decimal findPFromRMS(decimal rmsVolts, double load)
 		{
-			return Math.Round( (rmsVolts * rmsVolts) / load, 3);
+			return Math.Round( (rmsVolts * rmsVolts) / Convert.ToDecimal(load), 3);
+		}
+		
+		public static decimal findPFromPeak(decimal peakVolts, double load)
+		{
+			double d = Convert.ToDouble(peakVolts);
+			double rmsVolts = peak2RMS(d);
+			
+			return Convert.ToDecimal(findPFromRMS(Convert.ToDecimal(rmsVolts), load));
 		}
 		
 		public static double findRMSFromP(double p, double load)
@@ -29,6 +37,15 @@ namespace AmpFriend
 			return Math.Round(Math.Sqrt(p * load), 3);
 		}
 		
+		public static double peak2RMS(double peakVolts) 
+		{
+			return Math.Round(peakVolts / 1.414);
+		}
+		
+		public static double rms2Peak(double rmsVolts) 
+		{
+			return Math.Round(rmsVolts * 1.414);
+		}
 	}
 
 }

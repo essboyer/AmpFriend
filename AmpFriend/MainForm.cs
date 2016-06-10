@@ -18,6 +18,9 @@ namespace AmpFriend
 	/// </summary>
 	public partial class MainForm : Form
 	{
+		
+		private bool rmsVolts = true;
+		
 		public MainForm()
 		{
 			//
@@ -50,15 +53,30 @@ namespace AmpFriend
 		   
 		}
 		
+		/// <summary>
+		/// Voltage box
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		void TextBox1KeyUp(object sender, KeyEventArgs e)
 		{
-			TextBox theBox = (sender as TextBox);
+			updateWatts();
+		}
+		
+		void updateWatts() {
+			TextBox theBox = textBox1;
 		    // Assuming we're all numbers, let's do the maths!
-		    if (!theBox.Text.Equals("")) {
+		    if (!theBox.Text.Equals("") && rmsVolts) {
 		    	label6.Text = Maths.findPFromRMS(decimal.Parse(theBox.Text), 2).ToString() + " W";
 		    	label7.Text = Maths.findPFromRMS(decimal.Parse(theBox.Text), 4).ToString() + " W";
 		    	label8.Text = Maths.findPFromRMS(decimal.Parse(theBox.Text), 8).ToString() + " W";
 		    	label9.Text = Maths.findPFromRMS(decimal.Parse(theBox.Text), 16).ToString() + " W";
+		    }
+		    else if (!theBox.Text.Equals("") && !rmsVolts) {
+		    	label6.Text = Maths.findPFromPeak(decimal.Parse(theBox.Text), 2).ToString() + " W";
+		    	label7.Text = Maths.findPFromPeak(decimal.Parse(theBox.Text), 4).ToString() + " W";
+		    	label8.Text = Maths.findPFromPeak(decimal.Parse(theBox.Text), 8).ToString() + " W";
+		    	label9.Text = Maths.findPFromPeak(decimal.Parse(theBox.Text), 16).ToString() + " W";
 		    }
 		    else {
 		    	label6.Text = "";
@@ -66,8 +84,19 @@ namespace AmpFriend
 		    	label8.Text = "";
 		    	label9.Text = "";
 		    }
+		    
+		    // Update the opposite volts label
+		    label15.Text = rmsVolts ? 
+		    	Maths.rms2Peak(double.Parse(theBox.Text)).ToString() + " VP2P" :
+		    	Maths.peak2RMS(double.Parse(theBox.Text)).ToString() + " VRMS";
 		}
 		
+		
+		/// <summary>
+		/// Wattage box validation
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		void TextBox2KeyPress(object sender, KeyPressEventArgs e)
 		{
 			TextBox theBox = (sender as TextBox);
@@ -87,6 +116,12 @@ namespace AmpFriend
 		    }
 		}
 		
+		
+		/// <summary>
+		/// Wattage box handler
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		void TextBox2KeyUp(object sender, KeyEventArgs e)
 		{
 			TextBox theBox = (sender as TextBox);
@@ -103,6 +138,36 @@ namespace AmpFriend
 		    	label13.Text = "";
 		    	label14.Text = "";
 		    }
+		}
+		
+		/// <summary>
+		/// RMS Radio Button
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		void RadioButton1CheckedChanged(object sender, EventArgs e)
+		{
+			RadioButton rb = (RadioButton) sender;
+			
+			radioButton2.Checked = !rb.Checked;
+			rmsVolts = rb.Checked;
+			
+			updateWatts();
+		}
+		
+		/// <summary>
+		/// P2P Radio Button
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		void RadioButton2CheckedChanged(object sender, EventArgs e)
+		{
+			RadioButton rb = (RadioButton) sender;
+			
+			radioButton1.Checked = !rb.Checked;
+			rmsVolts = !rb.Checked;
+			
+			updateWatts();
 		}
 	}
 }
