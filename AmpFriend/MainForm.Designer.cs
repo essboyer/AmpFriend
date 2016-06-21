@@ -72,7 +72,7 @@ namespace AmpFriend
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(-1, 209);
+			this.label1.Location = new System.Drawing.Point(0, 209);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(116, 23);
 			this.label1.TabIndex = 1;
@@ -81,7 +81,7 @@ namespace AmpFriend
 			// label2
 			// 
 			this.label2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(-1, 236);
+			this.label2.Location = new System.Drawing.Point(0, 236);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
 			this.label2.TabIndex = 2;
@@ -99,7 +99,7 @@ namespace AmpFriend
 			// label4
 			// 
 			this.label4.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(-1, 290);
+			this.label4.Location = new System.Drawing.Point(0, 290);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(100, 23);
 			this.label4.TabIndex = 4;
@@ -231,7 +231,7 @@ namespace AmpFriend
 			// label16
 			// 
 			this.label16.Font = new System.Drawing.Font("Harlow Solid Italic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.Location = new System.Drawing.Point(-1, 9);
+			this.label16.Location = new System.Drawing.Point(0, 9);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(347, 54);
 			this.label16.TabIndex = 19;
@@ -262,6 +262,7 @@ namespace AmpFriend
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBox1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "MainForm";
