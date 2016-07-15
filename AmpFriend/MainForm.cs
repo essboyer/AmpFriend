@@ -63,6 +63,7 @@ namespace AmpFriend
 		
 		void updateWatts() {
 			TextBox theBox = textBox1;
+			
 		    // Assuming we're all numbers, let's do the maths!
 		    if (!theBox.Text.Equals("") && rmsVolts) {
 		    	label6.Text = Maths.findPFromRMS(decimal.Parse(theBox.Text), 2).ToString() + " W";
@@ -81,6 +82,8 @@ namespace AmpFriend
 		    	label7.Text = "";
 		    	label8.Text = "";
 		    	label9.Text = "";
+		    	
+		    	return; // Nothing left to do
 		    }
 		    
 		    // Update the opposite volts label
