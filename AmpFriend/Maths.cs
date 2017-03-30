@@ -39,12 +39,12 @@ namespace AmpFriend
 		
 		public static double peak2RMS(double peakVolts) 
 		{
-			return Math.Round(peakVolts / 1.414);
+			return Math.Round(0.3535 * peakVolts);
 		}
 		
 		public static double rms2Peak(double rmsVolts) 
 		{
-			return Math.Round(rmsVolts * 1.414);
+			return Math.Round(rmsVolts * (1.414 * 2));
 		}
 	}
 
