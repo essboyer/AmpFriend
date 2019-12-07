@@ -1,15 +1,21 @@
-C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\bin\Debug\AmpFriend.exe
-C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\bin\Debug\AmpFriend.pdb
-C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\AmpFriend.exe
-C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\AmpFriend.pdb
-C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\AmpFriend.MainForm.resources
-C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\GenerateResource.read.1.tlog
-C:\Users\boyer\Documents\SharpDevelop Projects\AmpFriend\AmpFriend\obj\Debug\GenerateResource.write.1.tlog
-C:\dev\AmpFriend\AmpFriend\bin\Debug\AmpFriend.exe
-C:\dev\AmpFriend\AmpFriend\bin\Debug\AmpFriend.pdb
-C:\dev\AmpFriend\AmpFriend\obj\Debug\AmpFriend.csprojResolveAssemblyReference.cache
-C:\dev\AmpFriend\AmpFriend\obj\Debug\AmpFriend.MainForm.resources
-C:\dev\AmpFriend\AmpFriend\obj\Debug\AmpFriend.csproj.GenerateResource.Cache
-C:\dev\AmpFriend\AmpFriend\obj\Debug\AmpFriend.exe
-C:\dev\AmpFriend\AmpFriend\obj\Debug\AmpFriend.pdb
+C:/Users/boyer/Documents/SharpDevelop Projects/AmpFriend/AmpFriend/bin/Debug/AmpFriend.exe
+C:/Users/boyer/Documents/SharpDevelop Projects/AmpFriend/AmpFriend/bin/Debug/AmpFriend.pdb
+C:/Users/boyer/Documents/SharpDevelop Projects/AmpFriend/AmpFriend/obj/Debug/ResolveAssemblyReference.cache
+C:/Users/boyer/Documents/SharpDevelop Projects/AmpFriend/AmpFriend/obj/Debug/AmpFriend.exe
+C:/Users/boyer/Documents/SharpDevelop Projects/AmpFriend/AmpFriend/obj/Debug/AmpFriend.pdb
+C:/Users/boyer/Documents/SharpDevelop Projects/AmpFriend/AmpFriend/obj/Debug/AmpFriend.MainForm.resources
+C:/Users/boyer/Documents/SharpDevelop Projects/AmpFriend/AmpFriend/obj/Debug/GenerateResource.read.1.tlog
+C:/Users/boyer/Documents/SharpDevelop Projects/AmpFriend/AmpFriend/obj/Debug/GenerateResource.write.1.tlog
+C:/dev/AmpFriend/AmpFriend/bin/Debug/AmpFriend.exe
+C:/dev/AmpFriend/AmpFriend/bin/Debug/AmpFriend.pdb
+C:/dev/AmpFriend/AmpFriend/obj/Debug/AmpFriend.csprojResolveAssemblyReference.cache
+C:/dev/AmpFriend/AmpFriend/obj/Debug/AmpFriend.MainForm.resources
+C:/dev/AmpFriend/AmpFriend/obj/Debug/AmpFriend.csproj.GenerateResource.Cache
+C:/dev/AmpFriend/AmpFriend/obj/Debug/AmpFriend.exe
+C:/dev/AmpFriend/AmpFriend/obj/Debug/AmpFriend.pdb
+/Users/seanboyer/dev/ampfriend/AmpFriend/bin/Debug/AmpFriend.exe
+/Users/seanboyer/dev/ampfriend/AmpFriend/bin/Debug/AmpFriend.pdb
+/Users/seanboyer/dev/ampfriend/AmpFriend/obj/Debug/AmpFriend.MainForm.resources
+/Users/seanboyer/dev/ampfriend/AmpFriend/obj/Debug/AmpFriend.csproj.GenerateResource.cache
+/Users/seanboyer/dev/ampfriend/AmpFriend/obj/Debug/AmpFriend.exe
+/Users/seanboyer/dev/ampfriend/AmpFriend/obj/Debug/AmpFriend.pdb
